@@ -19,7 +19,7 @@ app.post("signup",(req,res)=>{
     const data = {
         userName,email,password,dateOfBirth
     }
-    res.status(200).send({msg:"successfully signed up..!"});
+   return res.status(200).send({msg:"successfully signed up..!"},data);
 });
 
 // app.get("getsignup",(req,res)=>{
