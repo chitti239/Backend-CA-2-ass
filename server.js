@@ -22,16 +22,16 @@ app.post("signup",(req,res)=>{
     res.status(200).send({msg:"successfully signed up..!"});
 });
 
-app.get("getsignup",(req,res)=>{
-    try {
-        const data = {
-            userName,email,password,dateOfBirth
-        } 
-        res.status(200).send({msg:"This are user details",data});
-    } catch (error) {
-        res.status(500).send({msg:"something went wrong while fetching data..!"});
-    }
-});
+// app.get("getsignup",(req,res)=>{
+//     try {
+//         const data = {
+//             userName,email,password,dateOfBirth
+//         } 
+//         res.status(200).send({msg:"This are user details",data});
+//     } catch (error) {
+//         res.status(500).send({msg:"something went wrong while fetching data..!"});
+//     }
+// });
 
 app.listen(3000,()=>{
     try {
